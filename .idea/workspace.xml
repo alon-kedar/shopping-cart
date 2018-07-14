@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="df21c072-4a0f-46a0-820b-7edf70e96b67" name="Default" comment="" />
+    <list default="true" id="df21c072-4a0f-46a0-820b-7edf70e96b67" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/static/css/app.e13fb50d918dc44a5155b2e96bb892aa.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/static/css/app.e13fb50d918dc44a5155b2e96bb892aa.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/static/js/app.98ba777c182d94cfd69f.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/static/js/app.98ba777c182d94cfd69f.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/static/js/manifest.2ae2e69a05c33dfc65f8.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/static/js/manifest.2ae2e69a05c33dfc65f8.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/static/js/vendor.764f6b366b5cd101cefb.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/static/js/vendor.764f6b366b5cd101cefb.js.map" beforeDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -23,11 +34,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/dist/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="338" selection-start-column="338" selection-end-column="338" />
+              <caret column="348" selection-start-column="348" selection-end-column="348" />
             </state>
           </provider>
         </entry>
@@ -71,7 +82,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Cart.vue" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Cart.vue" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/Cart.vue">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-178">
@@ -134,8 +145,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>cart.vu</find>
-      <find>component</find>
       <find>produ</find>
       <find>vue.compo</find>
       <find>#vue</find>
@@ -154,7 +163,6 @@
       <find>propagateCheckout</find>
       <find>checkoutRequest</find>
       <find>track by</find>
-      <find>track-by</find>
       <find>$set</find>
       <find>$</find>
       <find>quantity</find>
@@ -164,18 +172,24 @@
       <find>currency</find>
       <find>filters</find>
       <find>$index</find>
+      <find>dist/statis</find>
+      <find>track-by</find>
+      <find>/static</find>
     </findStrings>
     <replaceStrings>
       <replace />
-      <replace>static</replace>
       <replace>this.</replace>
       <replace>props</replace>
       <replace>this.data.</replace>
       <replace>data.cart</replace>
+      <replace>dist/statis</replace>
+      <replace>dist/static</replace>
+      <replace>static</replace>
     </replaceStrings>
     <dirStrings>
-      <dir>C:\Users\Alon\WebstormProjects\s-cart\dist</dir>
       <dir>C:\Users\Alon\WebstormProjects\s-cart</dir>
+      <dir>C:\Users\Alon\WebstormProjects\s-cart\static</dir>
+      <dir>C:\Users\Alon\WebstormProjects\s-cart\dist</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -187,7 +201,6 @@
         <option value="$PROJECT_DIR$/index.vue" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/dist/index.html" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/config/dev.env.js" />
         <option value="$PROJECT_DIR$/src/components/ShoppingCart.vue" />
@@ -195,6 +208,7 @@
         <option value="$PROJECT_DIR$/src/components/CheckoutArea.vue" />
         <option value="$PROJECT_DIR$/src/App.vue" />
         <option value="$PROJECT_DIR$/src/components/Cart.vue" />
+        <option value="$PROJECT_DIR$/dist/index.html" />
       </list>
     </option>
   </component>
@@ -280,15 +294,16 @@
       <updated>1531550017593</updated>
       <workItem from="1531550018825" duration="6115000" />
       <workItem from="1531566062249" duration="8866000" />
-      <workItem from="1531579764251" duration="7325000" />
+      <workItem from="1531579764251" duration="7988000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17932000" />
+    <option name="totallyTimeSpent" value="18595000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.8349835" visible="true" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -298,7 +313,7 @@
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.5627063" />
       <window_info id="Structure" order="1" sideWeight="0.1650165" side_tool="true" visible="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.7574257" />
+      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.39768976" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -403,13 +418,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dist/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="338" selection-start-column="338" selection-end-column="338" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1037">
@@ -428,13 +436,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="27" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -488,6 +489,20 @@
           <folding>
             <element signature="n#style#0;n#div#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dist/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="348" selection-start-column="348" selection-end-column="348" />
         </state>
       </provider>
     </entry>
