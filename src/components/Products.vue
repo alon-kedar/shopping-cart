@@ -43,7 +43,7 @@
     "<button @click='modalAddToCart(modalData), hideModal()'>Add to Cart</button>" +
     "</div></div></div>",
 
-    props: ['productsData', 'cart', 'tax', 'cartSubTotal', 'cartTotal'],
+    props: ['data'],
 
     data: function () {
       return {
@@ -55,17 +55,24 @@
       }
     },
 
+    computed: {
+      productsData() {
+        return this.data.productsData
+      },
+    },
+
     methods: {
       addToCart: function (product) {
         var found = false;
 
-        for (var i = 0; i < vue.cart.length; i++) {
+        for (var i = 0; i < this.data.cart.length; i++) {
 
-          if (vue.cart[i].sku === product.sku) {
-            var newProduct = vue.cart[i];
+          if (this.data.cart[i].sku === product.sku) {
+            var newProduct = this.data.cart[i];
             newProduct.quantity = newProduct.quantity + 1;
-            vue.cart.$set(i, newProduct);
-            //console.log("DUPLICATE",  vue.cart[i].product + "'s quantity is now: " + vue.cart[i].quantity);
+            console.log(this.data.cart)
+            this.data.cart.$set(i, newProduct);
+            //console.log("DUPLICATE",  this.data.cart[i].product + "'s quantity is now: " + this.data.cart[i].quantity);
             found = true;
             break;
           }
@@ -73,12 +80,12 @@
 
         if (!found) {
           product.quantity = 1;
-          vue.cart.push(product);
+          this.data.cart.push(product);
         }
 
-        vue.cartSubTotal = vue.cartSubTotal + product.price;
-        vue.cartTotal = vue.cartSubTotal + (vue.tax * vue.cartSubTotal);
-        vue.checkoutBool = true;
+        this.data.cartSubTotal = this.data.cartSubTotal + product.price;
+        this.data.cartTotal = this.data.cartSubTotal + (this.data.tax * this.data.cartSubTotal);
+        this.data.checkoutBool = true;
       },
 
       modalAddToCart: function (modalData) {
@@ -100,7 +107,7 @@
 
       changeProductInModal: function (direction) {
         var self = this,
-          productsLength = vue.productsData.length,
+          productsLength = this.data.productsData.length,
           currentProduct = self.modalData.sku,
           newProductId,
           newProduct;
@@ -123,8 +130,8 @@
         //console.log(direction, newProductId);
 
         for (var i = 0; i < productsLength; i++) {
-          if (vue.productsData[i].sku === newProductId) {
-            self.viewProduct(vue.productsData[i]);
+          if (this.data.productsData[i].sku === newProductId) {
+            self.viewProduct(this.data.productsData[i]);
           }
         }
       },

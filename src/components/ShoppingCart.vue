@@ -5,8 +5,6 @@
   Vue.config.debug = false;
   var vue = new Vue({
     el: "#vue",
-
-
   });
 </script>
 

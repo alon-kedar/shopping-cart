@@ -2,12 +2,9 @@
   <div class="main-wrapper">
     <div class="header"><h1>Vue Shopping Cart</h1></div>
     <div id="vue">
-      <cart :cart="cart" :cart-sub-total="cartSubTotal" :tax="tax" :cart-total="cartTotal"
-            :checkout-bool="checkoutBool"></cart>
-      <products :cart="cart" :cart-sub-total="cartSubTotal" :tax="tax" :cart-total="cartTotal"
-                :products-data="productsData"></products>
-      <checkout-area v-if="checkoutBool" :cart="cart" :tax="tax" :cart-sub-total="cartSubTotal" :cart-total="cartTotal"
-                     :products-data="productsData" :total-with-tax="totalWithTax"></checkout-area>
+      <cart :data="data"></cart>
+      <products :data="data"></products>
+      <checkout-area v-if="data.checkoutBool" :data="data"></checkout-area>
     </div>
   </div>
 </template>
@@ -22,109 +19,110 @@
     components: {Cart, Products, CheckoutArea},
     data() {
       return {
-        productsData: [
-          {
-            sku: 1,
-            product: "Monkey",
-            image: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/241793/chimpanzee.jpg",
-            images: [
-              { image: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/241793/chimpanzee.jpg" },
-              { image: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/241793/gorilla.jpg" },
-              { image: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/241793/red-monkey.jpg" },
-              { image: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/241793/mandrill-monkey.jpg" }
-            ],
-            description: "This is a monkey",
-            details: "This is where some detailes on monkies would go. This monkey done seent some shit.",
-            price: 5.50
-          },
+        data: {
+          productsData: [
+            {
+              sku: 1,
+              product: "Monkey",
+              image: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/241793/chimpanzee.jpg",
+              images: [
+                {image: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/241793/chimpanzee.jpg"},
+                {image: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/241793/gorilla.jpg"},
+                {image: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/241793/red-monkey.jpg"},
+                {image: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/241793/mandrill-monkey.jpg"}
+              ],
+              description: "This is a monkey",
+              details: "This is where some detailes on monkies would go. This monkey done seent some shit.",
+              price: 5.50
+            },
 
-          {
-            sku: 2,
-            product: "Kitten",
-            image: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/241793/kittens.jpg",
-            description: "This is a kitten",
-            details: "This is where some detailes on kittens would go. Shout out kittens for being adorable.",
-            price: 10
-          },
+            {
+              sku: 2,
+              product: "Kitten",
+              image: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/241793/kittens.jpg",
+              description: "This is a kitten",
+              details: "This is where some detailes on kittens would go. Shout out kittens for being adorable.",
+              price: 10
+            },
 
-          {
-            sku: 3,
-            product: "Shark",
-            image: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/241793/shark.jpg",
-            description: "This is a shark",
-            details: "This is where some detailes on sharks would go. Damn nature, you scary.",
-            price: 15
-          },
+            {
+              sku: 3,
+              product: "Shark",
+              image: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/241793/shark.jpg",
+              description: "This is a shark",
+              details: "This is where some detailes on sharks would go. Damn nature, you scary.",
+              price: 15
+            },
 
-          {
-            sku: 4,
-            product: "Puppy",
-            image: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/241793/dog.jpg",
-            description: "This is a puppy",
-            details: "This is where some detailes on puppies would go. Shout out puppies for being adorable.",
-            price: 5
-          },
+            {
+              sku: 4,
+              product: "Puppy",
+              image: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/241793/dog.jpg",
+              description: "This is a puppy",
+              details: "This is where some detailes on puppies would go. Shout out puppies for being adorable.",
+              price: 5
+            },
 
-          {
-            sku: 5,
-            product: "Apple",
-            image: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/241793/apple.jpg",
-            description: "This is an apple",
-            details: "This is where some detailes on apples would go. Shout out apples for being delicious.",
-            price: 1
-          },
+            {
+              sku: 5,
+              product: "Apple",
+              image: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/241793/apple.jpg",
+              description: "This is an apple",
+              details: "This is where some detailes on apples would go. Shout out apples for being delicious.",
+              price: 1
+            },
 
-          {
-            sku: 6,
-            product: "Orange",
-            image: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/241793/orange.jpg",
-            description: "This is an orange",
-            details: "This is where some detailes on oranges would go. Shout out oranges for being delicious.",
-            price: 1.1
-          },
+            {
+              sku: 6,
+              product: "Orange",
+              image: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/241793/orange.jpg",
+              description: "This is an orange",
+              details: "This is where some detailes on oranges would go. Shout out oranges for being delicious.",
+              price: 1.1
+            },
 
-          {
-            sku: 7,
-            product: "Peach",
-            image: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/241793/peach.jpg",
-            description: "This is a peach",
-            details: "This is where some detailes on peaches would go. Shout out peaches for being delicious.",
-            price: 1.5
-          },
+            {
+              sku: 7,
+              product: "Peach",
+              image: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/241793/peach.jpg",
+              description: "This is a peach",
+              details: "This is where some detailes on peaches would go. Shout out peaches for being delicious.",
+              price: 1.5
+            },
 
-          {
-            sku: 8,
-            product: "Mango",
-            image: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/241793/mango.png",
-            description: "This is a mango",
-            details: "This is where some detailes on mangos would go. Shout out mangos for being delicious.",
-            price: 2
-          },
+            {
+              sku: 8,
+              product: "Mango",
+              image: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/241793/mango.png",
+              description: "This is a mango",
+              details: "This is where some detailes on mangos would go. Shout out mangos for being delicious.",
+              price: 2
+            },
 
-          {
-            sku: 9,
-            product: "Cognac",
-            image: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/241793/cognac.jpg",
-            description: "This is a glass of cognac",
-            details: "This is where some detailes on cognac would go. I'm like hey whats up, hello.",
-            price: 17.38
-          },
+            {
+              sku: 9,
+              product: "Cognac",
+              image: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/241793/cognac.jpg",
+              description: "This is a glass of cognac",
+              details: "This is where some detailes on cognac would go. I'm like hey whats up, hello.",
+              price: 17.38
+            },
 
-          {
-            sku: 10,
-            product: "Chain",
-            image: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/241793/chain.jpg",
-            description: "This is a chain",
-            details: "This is where some details on chains would go. 2Chainz but I got me a few on.",
-            price: 17.38
-          }
-        ],
-        checkoutBool: false,
-        cart: [],
-        cartSubTotal: 0,
-        tax: 0.065,
-        cartTotal: 0
-      }
+            {
+              sku: 10,
+              product: "Chain",
+              image: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/241793/chain.jpg",
+              description: "This is a chain",
+              details: "This is where some details on chains would go. 2Chainz but I got me a few on.",
+              price: 17.38
+            }
+          ],
+          checkoutBool: false,
+          cart: [],
+          cartSubTotal: 0,
+          tax: 0.065,
+          cartTotal: 0
+        }
 
         // //intercept the checkout request dispatch
         // //send it back down the chain
@@ -132,8 +130,9 @@
         // "checkoutRequest": function() {
         //   vue.$broadcast("checkoutRequest");
         // }
-      // }
+        // }
       }
+    }
 
   }
 </script>
@@ -141,6 +140,7 @@
 
 <style lang="scss">
   @import url(https://fonts.googleapis.com/css?family=Bitter:400,400italic,700);
+  @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css);
 
   * {
     margin: 0;
@@ -259,11 +259,11 @@
   .main-wrapper {
     .header {
       position: relative;
-      background: linear-gradient(to left, #16222A , #3A6073);
+      background: linear-gradient(to left, #16222A, #3A6073);
       background-size: cover;
       height: 25em;
       width: 100vw;
-      box-shadow: inset -1px -3px 5px rgba(0,0,0,0.5), inset 1px 3px 5px rgba(0,0,0,0.5);
+      box-shadow: inset -1px -3px 5px rgba(0, 0, 0, 0.5), inset 1px 3px 5px rgba(0, 0, 0, 0.5);
 
       h1 {
         position: absolute;
@@ -273,7 +273,7 @@
         transform: translate(-50%, -50%);
         color: white;
         font-size: 3em;
-        text-shadow: 1px 3px 5px rgba(0,0,0,0.5), -1px -3px 5px rgba(0,0,0,0.5);
+        text-shadow: 1px 3px 5px rgba(0, 0, 0, 0.5), -1px -3px 5px rgba(0, 0, 0, 0.5);
       }
     }
 
@@ -287,7 +287,7 @@
         right: 0em;
         top: 0em;
         text-align: right;
-        background: rgba(0,0,0,0.85);
+        background: rgba(0, 0, 0, 0.85);
         color: white;
         z-index: 1;
 
@@ -304,7 +304,6 @@
         .cart-size {
           padding: 1em 0 1em 1em;
         }
-
 
         .cart-items {
           padding: 0 1em 2em 1em;
@@ -327,7 +326,7 @@
               left: 0;
               width: 100%;
               height: 100%;
-              background: rgba(0,0,0,0.25);
+              background: rgba(0, 0, 0, 0.25);
               transition: all 0.1s;
             }
 
@@ -347,7 +346,7 @@
               }
 
               &:after {
-                background: rgba(0,0,0,0.5);
+                background: rgba(0, 0, 0, 0.5);
               }
             }
 
@@ -409,7 +408,7 @@
               left: 0;
               width: 100%;
               height: 100%;
-              background: rgba(0,0,0,0.5);
+              background: rgba(0, 0, 0, 0.5);
               opacity: 0;
               transition: all 0.25s;
             }
@@ -424,12 +423,12 @@
               font-size: 5em;
               color: white;
               pointer-events: none;
-              text-shadow: 0 0 5px rgba(0,0,0,0.5), 0 0 10px rgba(0,0,0,0.5);
+              text-shadow: 0 0 5px rgba(0, 0, 0, 0.5), 0 0 10px rgba(0, 0, 0, 0.5);
               transition: all 0.25s;
             }
 
             &:hover {
-              box-shadow: 0 12px 15px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+              box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 
               &:before {
                 opacity: 1;
@@ -465,7 +464,7 @@
           left: 0;
           width: 100%;
           height: 100%;
-          background: rgba(0,0,0,0.7);
+          background: rgba(0, 0, 0, 0.7);
           //cursor: pointer;
           z-index: 2;
         }
@@ -591,7 +590,7 @@
 
             .image {
               width: calc(100vw - 2.5em);
-              height:  calc(100vw - 2.5em);
+              height: calc(100vw - 2.5em);
             }
           }
         }
@@ -608,7 +607,7 @@
 
             .imageWrapper {
               width: calc(100vw - 4em);
-              height:  calc(100vw - 4em);
+              height: calc(100vw - 4em);
             }
           }
         }

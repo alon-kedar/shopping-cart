@@ -1,7 +1,8 @@
 <script>
   export default {
     name: "CheckoutArea",
-    template: "<h1>Checkout Area</h1>" +
+    template:     "<div>" +
+    "<h1>Checkout Area</h1>" +
     '<div class="checkout-area">' +
     '<span> {{ cart | cartSize }} </span><i class="fa fa-shopping-cart"></i>' +
     '<table>' +
@@ -15,11 +16,11 @@
     '</tr>' +
     '</thead>' +
     '<tbody>' +
-    '<tr v-for="product in cart" track-by="$index">' +
+    '<tr v-for="product in cart">' +
     '<td class="align-center">{{ product.sku }}</td>' +
     '<td>{{ product.product }}</td>' +
     '<td>{{ product.description }}</td>' +
-    '<td class="align-right">{{ cart[$index].quantity }}</td>' +
+    '<td class="align-right">{{ product.quantity }}</td>' +
     '<td class="align-right">{{ product.price | currency }}</td>' +
     '</tr>' +
     //'<button @click="removeProduct(product)"> X </button></div>' +
@@ -61,12 +62,14 @@
     "<h1>Checkout</h1>" +
     "<div>We accept: <i class='fa fa-stripe'></i> <i class='fa fa-cc-visa'></i> <i class='fa fa-cc-mastercard'></i> <i class='fa fa-cc-amex'></i> <i class='fa fa-cc-discover'></i></div><br>" +
     "<h3> Subtotal: {{ cartSubTotal | currency }} </h3>" +
-    "<h3> Tax: {{ cartTotal - cartSubTotal | currency }} </h4>" +
-    "<h1> Total: {{ cartTotal | currency }} </h3>" +
+    "<h3> Tax: {{ cartTotal - cartSubTotal | currency }} </h3>" +
+    "<h3> Total: {{ cartTotal | currency }} </h3>" +
     "<br><div>This is where our payment processor goes</div>" +
+    "</div>" +
+    "</div>" +
     "</div>",
 
-    props: ['cart', 'cartSize', 'cartSubTotal', 'tax', 'cartTotal'],
+    props: ['data'],
 
     data: function () {
       return {
@@ -94,17 +97,33 @@
         }
 
         return cartSize;
+      },
+
+      currency: function (val) {
+        return val + 'shekel69'
+      }
+    },
+
+    computed: {
+      cart() {
+        return this.data.cart
+      },
+      cartSubTotal() {
+        return this.data.cartSubTotal
+      },
+      cartTotal() {
+        return this.data.cartTotal
       }
     },
 
     methods: {
       removeProduct: function (product) {
-        vue.cart.$remove(product);
-        vue.cartSubTotal = vue.cartSubTotal - (product.price * product.quantity);
-        vue.cartTotal = vue.cartSubTotal + (vue.tax * vue.cartSubTotal);
+        this.data.cart.$remove(product);
+        this.data.cartSubTotal = this.data.cartSubTotal - (product.price * product.quantity);
+        this.data.cartTotal = this.data.cartSubTotal + (this.data.tax * this.data.cartSubTotal);
 
-        if (vue.cart.length <= 0) {
-          vue.checkoutBool = false;
+        if (this.data.cart.length <= 0) {
+          this.data.checkoutBool = false;
         }
       },
 
