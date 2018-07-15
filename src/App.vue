@@ -263,9 +263,9 @@
           }
 
           .cartImage {
-            width: 4em;
-            height: 4em;
-            margin: 0.5em auto;
+            /*width: 4em;*/
+            /*height: 4em;*/
+            /*margin: 0.5em auto;*/
             position: relative;
             cursor: pointer;
 
@@ -533,9 +533,8 @@
         }
 
         .products {
-          text-align: right;
-
           .product {
+            text-align: center;
             display: block;
 
             .image {

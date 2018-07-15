@@ -22,7 +22,7 @@
     "<div class='name'>{{ product.product }}</div>" +
     "<div class='description'>{{ product.description }}</div>" +
     "<div class='price'>&#8362;\t{{ product.price }}</div>" +
-    "<button @click='addToCart(product)'>הוסף לעגלה</button><br><br></img>" +
+    "<button @click='addToCart(product)'>הןסף לעגלה</button><br><br></img>" +
     "</div>" +
     "</div>" +
     "<div class='modalWrapper' v-show='showModal'>" +
