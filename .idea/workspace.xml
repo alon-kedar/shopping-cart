@@ -2,13 +2,39 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="df21c072-4a0f-46a0-820b-7edf70e96b67" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Prod.xls" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/products.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/p2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Prod.xls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/15 בננות.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/7 בננות.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/אוכמניות.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/אננס בנוני.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/אננס ענק.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/אננס קטן.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/אספרגוס.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/אפרסק לבן.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/ברוקולי.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/דלעת יפנית.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/דלעת ערמונים.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/חסה.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/מלפפון בייבי.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/סברס.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/עגביות תמר.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/ענבים אדומים.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/ענבים ירוקים.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/ענבים מוסקט.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/פטל אדום.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/פטל שחור.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/פטריות שיטאקי-ארינג'י.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/פטריות שמפיניון-פורטבלו.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/פלפלון בייבי.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/פפאיה ירוקה.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/פפאיה סידלס.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/שזיף כהה.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/שרי ליקופן.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/שרי צהוב.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/תאנים ברזילאיות סגולות.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/תאנים שחורות-ירוקות.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Products.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Products.vue" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -65,11 +91,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Products.vue" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Products.vue" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/Products.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="147">
-              <caret line="19" column="42" selection-start-line="19" selection-start-column="42" selection-end-line="19" selection-end-column="59" />
+            <state relative-caret-position="272">
+              <caret line="27" column="14" selection-start-line="27" selection-start-column="14" selection-end-line="27" selection-end-column="14" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#3;n#div#1;n#div#0;n#!!top" expanded="true" />
@@ -91,11 +117,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="App.vue" pinned="false" current-in-tab="true">
+      <file leaf-file-name="App.vue" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/App.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="51" column="36" selection-start-line="51" selection-start-column="36" selection-end-line="51" selection-end-column="36" />
+            <state relative-caret-position="510">
+              <caret line="69" column="20" lean-forward="true" selection-start-line="69" selection-start-column="20" selection-end-line="69" selection-end-column="20" />
               <folding>
                 <element signature="e#310#333#0" expanded="true" />
               </folding>
@@ -133,14 +159,9 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>modalAmount</find>
-      <find>vue-style-loader</find>
-      <find>module</find>
-      <find>vue.cart</find>
       <find>cartSubTotal</find>
       <find>cart.length</find>
       <find>computed</find>
-      <find>productsData</find>
       <find>vue.</find>
       <find>propagateCheckout</find>
       <find>checkoutRequest</find>
@@ -152,7 +173,6 @@
       <find>h1</find>
       <find>currency</find>
       <find>filters</find>
-      <find>$index</find>
       <find>dist/statis</find>
       <find>track-by</find>
       <find>/static</find>
@@ -163,16 +183,23 @@
       <find>prod</find>
       <find>prod.</find>
       <find>logo.png</find>
+      <find>productsData</find>
+      <find>image</find>
+      <find>modalData.image</find>
+      <find>$index</find>
+      <find>modalData</find>
+      <find>sku</find>
     </findStrings>
     <replaceStrings>
       <replace />
       <replace>this.</replace>
       <replace>props</replace>
-      <replace>data.cart</replace>
       <replace>dist/statis</replace>
       <replace>dist/static</replace>
       <replace>static</replace>
+      <replace>data.cart</replace>
       <replace>this.data.</replace>
+      <replace>this.getProductsFromExcel()</replace>
     </replaceStrings>
     <dirStrings>
       <dir>C:\Users\Alon\WebstormProjects\s-cart</dir>
@@ -192,12 +219,12 @@
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/config/dev.env.js" />
         <option value="$PROJECT_DIR$/src/components/ShoppingCart.vue" />
-        <option value="$PROJECT_DIR$/src/components/Products.vue" />
         <option value="$PROJECT_DIR$/src/components/CheckoutArea.vue" />
         <option value="$PROJECT_DIR$/src/components/Cart.vue" />
         <option value="$PROJECT_DIR$/dist/index.html" />
         <option value="$PROJECT_DIR$/src/p2.txt" />
         <option value="$PROJECT_DIR$/src/App.vue" />
+        <option value="$PROJECT_DIR$/src/components/Products.vue" />
       </list>
     </option>
   </component>
@@ -240,18 +267,13 @@
             <path>
               <item name="s-cart" type="b2602c69:ProjectViewProjectNode" />
               <item name="s-cart" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="s-cart" type="b2602c69:ProjectViewProjectNode" />
-              <item name="s-cart" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="s-cart" type="b2602c69:ProjectViewProjectNode" />
               <item name="s-cart" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -272,6 +294,7 @@
       <recent name="C:\Users\Alon\WebstormProjects\s-cart\src" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Alon\WebstormProjects\s-cart\static\images" />
       <recent name="C:\Users\Alon\WebstormProjects\s-cart\src\assets" />
       <recent name="C:\Users\Alon\WebstormProjects\s-cart" />
     </key>
@@ -300,19 +323,19 @@
       <updated>1531550017593</updated>
       <workItem from="1531550018825" duration="6115000" />
       <workItem from="1531566062249" duration="8866000" />
-      <workItem from="1531579764251" duration="22219000" />
+      <workItem from="1531579764251" duration="26399000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32826000" />
+    <option name="totallyTimeSpent" value="37006000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TypeScript" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.8349835" visible="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.8349835" visible="true" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
@@ -320,7 +343,7 @@
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.5627063" />
       <window_info id="Structure" order="1" sideWeight="0.1650165" side_tool="true" visible="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.4108911" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.10066006" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -467,39 +490,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Cart.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-178">
-          <caret line="106" selection-start-line="106" selection-end-line="106" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dist/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="348" selection-start-column="348" selection-end-column="348" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Products.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="19" column="42" selection-start-line="19" selection-start-column="42" selection-end-line="19" selection-end-column="59" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#3;n#div#1;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#3;n#div#1;n#div#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -524,12 +518,41 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/dist/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="348" selection-start-column="348" selection-end-column="348" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Cart.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-178">
+          <caret line="106" selection-start-line="106" selection-end-line="106" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/App.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="51" column="36" selection-start-line="51" selection-start-column="36" selection-end-line="51" selection-end-column="36" />
+        <state relative-caret-position="510">
+          <caret line="69" column="20" lean-forward="true" selection-start-line="69" selection-start-column="20" selection-end-line="69" selection-end-column="20" />
           <folding>
             <element signature="e#310#333#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Products.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="27" column="14" selection-start-line="27" selection-start-column="14" selection-end-line="27" selection-end-column="14" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#3;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#3;n#div#1;n#div#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>

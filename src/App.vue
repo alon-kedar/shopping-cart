@@ -41,7 +41,7 @@
     },
 
     methods: {
-      parseExcel: function f() {
+      getProductsFromExcel: function f(products) {
 
         var request = new XMLHttpRequest();
         request.open('GET', 'static/Prod.xls', true);
@@ -56,6 +56,7 @@
         };
         request.send();
 
+
         function handleExcel(excelFileContent) {
 
 
@@ -65,26 +66,23 @@
 
           console.log(rows)
 
-          rows.forEach(function (excelRow) {
-            console.log(excelRow)
-          });
+          products.push(...rows.map((p, i) => {
+            return {
+              sku: i,
+              image: "static/images/" + p.product + ".jpg",
+              product: p.product,
+              price: p.price,
+              description: p.name,
+              details: p.name
+            }
+          }))
+
+          console.log(products)
       };
       }
     },
     mounted() {
-      let product = this.parseExcel()
-
-
-      // products.forEach((p, i) => {
-      //   this.data.productsData.push({
-      //     sku: i,
-      //     image: "images/" + p.name,
-      //     product: product.name,
-      //     price: product.price,
-      //     description: 'yo',
-      //     details: 'yo yo'
-      //   })
-      // })
+      this.getProductsFromExcel(this.data.productsData)
     }
   }
 </script>

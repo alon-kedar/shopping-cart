@@ -18,11 +18,13 @@
     "<h1>Products</h1>" +
     "<div class='products'>" +
     "<div v-for='product in productsData' track-by='$index' :class='`product` + product.product'>" +
+    "<img :src='product.image' width='200' height='200'>" +
     "<div class='image' @click='viewProduct(product)' v-bind:style='{ backgroundImage: \"url(\" + product.image + \")\" }' style='background-size: cover; background-position: center;'></div>" +
     "<div class='name'>{{ product.product }}</div>" +
     "<div class='description'>{{ product.description }}</div>" +
     "<div class='price'>{{ product.price }}</div>" +
-    "<button @click='addToCart(product)'>Add to Cart</button><br><br></div>" +
+    "<button @click='addToCart(product)'>Add to Cart</button><br><br></img>" +
+    "</div>" +
     "</div>" +
     "<div class='modalWrapper' v-show='showModal'>" +
     "<div class='prevProduct' @click='changeProductInModal(\"prev\")'><i class='fa fa-angle-left'></i></div>" +
