@@ -10,9 +10,11 @@
 </template>
 
 <script>
+  import xlsx from 'xlsx'
   import Cart from './components/Cart'
   import Products from './components/Products'
   import CheckoutArea from './components/CheckoutArea'
+  import path from 'path'
 
   export default {
     name: 'App',
@@ -20,103 +22,7 @@
     data() {
       return {
         data: {
-          productsData: [
-            {
-              sku: 1,
-              product: "Monkey",
-              image: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/241793/chimpanzee.jpg",
-              images: [
-                {image: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/241793/chimpanzee.jpg"},
-                {image: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/241793/gorilla.jpg"},
-                {image: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/241793/red-monkey.jpg"},
-                {image: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/241793/mandrill-monkey.jpg"}
-              ],
-              description: "This is a monkey",
-              details: "This is where some detailes on monkies would go. This monkey done seent some shit.",
-              price: 5.50
-            },
-
-            {
-              sku: 2,
-              product: "Kitten",
-              image: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/241793/kittens.jpg",
-              description: "This is a kitten",
-              details: "This is where some detailes on kittens would go. Shout out kittens for being adorable.",
-              price: 10
-            },
-
-            {
-              sku: 3,
-              product: "Shark",
-              image: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/241793/shark.jpg",
-              description: "This is a shark",
-              details: "This is where some detailes on sharks would go. Damn nature, you scary.",
-              price: 15
-            },
-
-            {
-              sku: 4,
-              product: "Puppy",
-              image: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/241793/dog.jpg",
-              description: "This is a puppy",
-              details: "This is where some detailes on puppies would go. Shout out puppies for being adorable.",
-              price: 5
-            },
-
-            {
-              sku: 5,
-              product: "Apple",
-              image: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/241793/apple.jpg",
-              description: "This is an apple",
-              details: "This is where some detailes on apples would go. Shout out apples for being delicious.",
-              price: 1
-            },
-
-            {
-              sku: 6,
-              product: "Orange",
-              image: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/241793/orange.jpg",
-              description: "This is an orange",
-              details: "This is where some detailes on oranges would go. Shout out oranges for being delicious.",
-              price: 1.1
-            },
-
-            {
-              sku: 7,
-              product: "Peach",
-              image: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/241793/peach.jpg",
-              description: "This is a peach",
-              details: "This is where some detailes on peaches would go. Shout out peaches for being delicious.",
-              price: 1.5
-            },
-
-            {
-              sku: 8,
-              product: "Mango",
-              image: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/241793/mango.png",
-              description: "This is a mango",
-              details: "This is where some detailes on mangos would go. Shout out mangos for being delicious.",
-              price: 2
-            },
-
-            {
-              sku: 9,
-              product: "Cognac",
-              image: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/241793/cognac.jpg",
-              description: "This is a glass of cognac",
-              details: "This is where some detailes on cognac would go. I'm like hey whats up, hello.",
-              price: 17.38
-            },
-
-            {
-              sku: 10,
-              product: "Chain",
-              image: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/241793/chain.jpg",
-              description: "This is a chain",
-              details: "This is where some details on chains would go. 2Chainz but I got me a few on.",
-              price: 17.38
-            }
-          ],
+          productsData: [],
           checkoutBool: false,
           cart: [],
           cartSubTotal: 0,
@@ -132,8 +38,54 @@
         // }
         // }
       }
-    }
+    },
 
+    methods: {
+      parseExcel: function f() {
+
+        var request = new XMLHttpRequest();
+        request.open('GET', 'static/Prod.xls', true);
+        request.responseType = 'blob';
+        request.onload = function() {
+          var reader = new FileReader();
+          console.log(request.response)
+          reader.readAsBinaryString(request.response);
+          reader.onload =  function(e){
+            handleExcel(e.target.result);
+          };
+        };
+        request.send();
+
+        function handleExcel(excelFileContent) {
+
+
+          let parsedExcel = xlsx.read(excelFileContent, {type: "binary"});
+          let excelSheet = parsedExcel.Sheets[parsedExcel.SheetNames[0]];
+          let rows = xlsx.utils.sheet_to_json(excelSheet, {header: true});
+
+          console.log(rows)
+
+          rows.forEach(function (excelRow) {
+            console.log(excelRow)
+          });
+      };
+      }
+    },
+    mounted() {
+      let product = this.parseExcel()
+
+
+      // products.forEach((p, i) => {
+      //   this.data.productsData.push({
+      //     sku: i,
+      //     image: "images/" + p.name,
+      //     product: product.name,
+      //     price: product.price,
+      //     description: 'yo',
+      //     details: 'yo yo'
+      //   })
+      // })
+    }
   }
 </script>
 
