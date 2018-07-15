@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="df21c072-4a0f-46a0-820b-7edf70e96b67" name="Default" comment="" />
+    <list default="true" id="df21c072-4a0f-46a0-820b-7edf70e96b67" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.html" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -66,7 +68,7 @@
         <entry file="file://$PROJECT_DIR$/dist/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="151" selection-start-column="144" selection-end-column="151" />
+              <caret column="360" lean-forward="true" selection-start-column="360" selection-end-column="361" />
             </state>
           </provider>
         </entry>
@@ -294,15 +296,16 @@
       <workItem from="1531579764251" duration="30897000" />
       <workItem from="1531651044762" duration="43000" />
       <workItem from="1531651100668" duration="319000" />
-      <workItem from="1531677717785" duration="7544000" />
+      <workItem from="1531677717785" duration="7772000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49410000" />
+    <option name="totallyTimeSpent" value="49638000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TypeScript" order="7" />
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.830033" visible="true" weight="0.25" />
@@ -692,7 +695,7 @@
     <entry file="file://$PROJECT_DIR$/dist/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="151" selection-start-column="144" selection-end-column="151" />
+          <caret column="360" lean-forward="true" selection-start-column="360" selection-end-column="361" />
         </state>
       </provider>
     </entry>
