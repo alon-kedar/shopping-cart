@@ -533,7 +533,7 @@
         }
 
         .products {
-          text-align: left;
+          text-align: center;
 
           .product {
             display: block;
