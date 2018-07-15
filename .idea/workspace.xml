@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="df21c072-4a0f-46a0-820b-7edf70e96b67" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/components/Cart.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Cart.vue" afterDir="false" />
-    </list>
+    <list default="true" id="df21c072-4a0f-46a0-820b-7edf70e96b67" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -64,16 +62,16 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/dist/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="450" selection-start-column="450" selection-end-column="450" />
+              <caret column="151" selection-start-column="144" selection-end-column="151" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Cart.vue" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Cart.vue" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/Cart.vue">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="103">
@@ -183,8 +181,8 @@
         <option value="$PROJECT_DIR$/src/components/CheckoutArea.vue" />
         <option value="$PROJECT_DIR$/src/components/Products.vue" />
         <option value="$PROJECT_DIR$/src/App.vue" />
-        <option value="$PROJECT_DIR$/dist/index.html" />
         <option value="$PROJECT_DIR$/src/components/Cart.vue" />
+        <option value="$PROJECT_DIR$/dist/index.html" />
       </list>
     </option>
   </component>
@@ -296,16 +294,15 @@
       <workItem from="1531579764251" duration="30897000" />
       <workItem from="1531651044762" duration="43000" />
       <workItem from="1531651100668" duration="319000" />
-      <workItem from="1531677717785" duration="7276000" />
+      <workItem from="1531677717785" duration="7544000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49142000" />
+    <option name="totallyTimeSpent" value="49410000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TypeScript" order="7" />
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.830033" visible="true" weight="0.25" />
@@ -649,13 +646,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dist/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="450" selection-start-column="450" selection-end-column="450" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Products.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="103">
@@ -696,6 +686,13 @@
           <folding>
             <element signature="n#style#0;n#div#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dist/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="151" selection-start-column="144" selection-end-column="151" />
         </state>
       </provider>
     </entry>
