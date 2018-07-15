@@ -12,7 +12,7 @@
     '<td class="align-center"><button @click="quantityChange(product, \'decriment\')"><i class="close fa fa-minus"></i></button></td>' +
     '<td class="align-center">{{ product.quantity }}</td>' +
     '<td class="align-center"><button @click="quantityChange(product, \'incriment\')"><i class="close fa fa-plus"></i></button></td>' +
-    '<td class="align-center">{{ product | customPluralize }}</td>' +
+    '<td class="align-center">{{ product.product }}</td>' +
     '<td>&#8362;\t{{ product.price }}</td>' +
     '</tr>' +
     '</tbody>' +
