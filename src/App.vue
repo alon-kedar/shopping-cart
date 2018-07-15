@@ -69,7 +69,7 @@
           products.push(...rows.map((p, i) => {
             return {
               sku: i,
-              image: "static/images/" + p.product + ".jpg",
+              image: "static/images/" + p.product.split(' ').join('_') + ".jpg",
               product: p.product,
               price: parseInt(p.price),
               description: p.name,

@@ -13,12 +13,12 @@
     '<td class="align-center">{{ product.quantity }}</td>' +
     '<td class="align-center"><button @click="quantityChange(product, \'incriment\')"><i class="close fa fa-plus"></i></button></td>' +
     '<td class="align-center">{{ product | customPluralize }}</td>' +
-    '<td>{{ product.price }}</td>' +
+    '<td>&#8362;\t{{ product.price }}</td>' +
     '</tr>' +
     '</tbody>' +
     '</table>' +
     '</div>' +
-    '<h4 class="cartSubTotal" v-show="showCart"> {{ cartSubTotal }} </h4></div>' +
+    '<h4 class="cartSubTotal" v-show="showCart"> &#8362;\t{{ cartSubTotal }} : סכ"ה</h4></div>' +
     '<button class="clearCart" v-show="checkoutBool" @click="clearCart()"> Clear Cart </button>' +
     '<button class="checkoutCart" v-show="checkoutBool" @click="propagateCheckout()"> Checkout </button>' +
     '</div>',

@@ -21,7 +21,7 @@
     '<td>{{ product.product }}</td>' +
     '<td>{{ product.description }}</td>' +
     '<td class="align-right">{{ product.quantity }}</td>' +
-    '<td class="align-right">{{ product.price | currency }}</td>' +
+    '<td class="align-right">\t&#8362;{{ product.price }}</td>' +
     '</tr>' +
     //'<button @click="removeProduct(product)"> X </button></div>' +
     '<tr>' +
@@ -43,14 +43,14 @@
     '<td></td>' +
     '<td></td>' +
     '<td class="align-right">Tax:</td>' +
-    '<td class="align-right"><h4 v-if="cartSubTotal != 0"> {{ cartTotal - cartSubTotal | currency }} </h4></td>' +
+    '<td class="align-right"><h4 v-if="cartSubTotal != 0">&#8362;\t{{ cartTotal - cartSubTotal }} </h4></td>' +
     '</tr>' +
     '<tr>' +
     '<td></td>' +
     '<td></td>' +
     '<td></td>' +
     '<td class="align-right vert-bottom">Total:</td>' +
-    '<td class="align-right vert-bottom"><h2 v-if="cartSubTotal != 0"> {{ cartTotal | currency }} </h2></td>' +
+    '<td class="align-right vert-bottom"><h2 v-if="cartSubTotal != 0">&#8362;\t {{ cartTotal }} </h2></td>' +
     '</tr>' +
     '</tbody>' +
     '</table>' +
