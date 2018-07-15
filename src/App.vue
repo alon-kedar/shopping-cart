@@ -99,7 +99,7 @@
     font-family: "Bitter";
   }
 
-  $mobile: 600px;
+  $mobile: 700px;
   $max-width: 80em;
 
   @mixin aspect-ratio($width, $height) {
@@ -335,7 +335,7 @@
           display: inline-block;
           margin: 0.75em;
           width: 100%;
-          max-width: 18em;
+          /*max-width: 18em;*/
 
           .image {
             width: 18em;
