@@ -71,7 +71,7 @@
               sku: i,
               image: "static/images/" + p.product + ".jpg",
               product: p.product,
-              price: p.price,
+              price: parseInt(p.price),
               description: p.name,
               details: p.name
             }

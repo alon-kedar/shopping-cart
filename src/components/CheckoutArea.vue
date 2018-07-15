@@ -118,7 +118,7 @@
 
     methods: {
       removeProduct: function (product) {
-        this.data.cart.$remove(product);
+        this.data.cart.splice(this.data.cart.findIndex(p => p.product === product.product), 1)
         this.data.cartSubTotal = this.data.cartSubTotal - (product.price * product.quantity);
         this.data.cartTotal = this.data.cartSubTotal + (this.data.tax * this.data.cartSubTotal);
 

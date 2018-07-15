@@ -73,7 +73,7 @@
             var newProduct = this.data.cart[i];
             newProduct.quantity = newProduct.quantity + 1;
             console.log(this.data.cart)
-            this.data.cart.$set(i, newProduct);
+            this.data.cart[i] = newProduct;
             //console.log("DUPLICATE",  this.data.cart[i].product + "'s quantity is now: " + this.data.cart[i].quantity);
             found = true;
             break;
