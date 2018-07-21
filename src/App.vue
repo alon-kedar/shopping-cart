@@ -14,7 +14,6 @@
   import Cart from './components/Cart'
   import Products from './components/Products'
   import CheckoutArea from './components/CheckoutArea'
-  import path from 'path'
 
   export default {
     name: 'App',
@@ -29,14 +28,6 @@
           tax: 0.065,
           cartTotal: 0
         }
-
-        // //intercept the checkout request dispatch
-        // //send it back down the chain
-        // events: {
-        // "checkoutRequest": function() {
-        //   vue.$broadcast("checkoutRequest");
-        // }
-        // }
       }
     },
 
@@ -64,8 +55,6 @@
           let excelSheet = parsedExcel.Sheets[parsedExcel.SheetNames[0]];
           let rows = xlsx.utils.sheet_to_json(excelSheet, {header: true});
 
-          console.log(rows)
-
           products.push(...rows.map((p, i) => {
             return {
               sku: i,
@@ -75,9 +64,7 @@
               description: p.name,
               details: p.name
             }
-          }))
-
-          console.log(products)
+          }).sort((a, b) => a - b))
       };
       }
     },
@@ -533,16 +520,17 @@
         }
 
         .products {
-          .product {
-            text-align: center;
-            display: block;
+            .product {
+              text-align: center;
+              display: inline-block;
+              width: 40%;
 
-            .image {
-              width: calc(100vw - 2.5em);
-              height: calc(100vw - 2.5em);
+              .image {
+                width: calc(50vw - 2.5em);
+                height: calc(50vw - 2.5em);
+              }
             }
           }
-        }
 
         .modalWrapper {
           .prevProduct, .nextProduct {
