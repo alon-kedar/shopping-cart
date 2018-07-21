@@ -18,7 +18,7 @@
     '</tbody>' +
     '</table>' +
     '</div>' +
-    '<h4 class="cartSubTotal" v-show="showCart"> &#8362;\t{{ cartSubTotal }} : סכ"ה</h4></div>' +
+    '<h4 class="cartSubTotal" v-show="showCart"> &#8362;\t{{ cartSubTotal }} : סה"כ</h4></div>' +
     '<button class="clearCart" v-show="checkoutBool" @click="clearCart()"> Clear Cart </button>' +
     '<button class="checkoutCart" v-show="checkoutBool" @click="propagateCheckout()"> Checkout </button>' +
     '</div>',

@@ -36,21 +36,21 @@
     '<td></td>' +
     '<td></td>' +
     '<td class="align-right">Subtotal:</td>' +
-    '<td class="align-right"><h4 v-if="cartSubTotal != 0"> {{ cartSubTotal | currency }} </h4></td>' +
+    '<td class="align-right"><h4 v-if="cartSubTotal != 0">&#8362;\t{{ cartSubTotal }} </h4></td>' +
     '</tr>' +
     '<tr>' +
     '<td></td>' +
     '<td></td>' +
     '<td></td>' +
     '<td class="align-right">Tax:</td>' +
-    '<td class="align-right"><h4 v-if="cartSubTotal != 0">&#8362;\t{{ cartTotal - cartSubTotal }} </h4></td>' +
+    '<td class="align-right"><h4 v-if="cartSubTotal != 0">&#8362;\t{{ cartTotal - cartSubTotal | fixed }} </h4></td>' +
     '</tr>' +
     '<tr>' +
     '<td></td>' +
     '<td></td>' +
     '<td></td>' +
     '<td class="align-right vert-bottom">Total:</td>' +
-    '<td class="align-right vert-bottom"><h2 v-if="cartSubTotal != 0">&#8362;\t {{ cartTotal }} </h2></td>' +
+    '<td class="align-right vert-bottom"><h2 v-if="cartSubTotal != 0">&#8362;\t {{ cartTotal | fixed }} </h2></td>' +
     '</tr>' +
     '</tbody>' +
     '</table>' +
@@ -61,9 +61,9 @@
     "<i class='close fa fa-times' @click='hideModal()'></i>" +
     "<h1>Checkout</h1>" +
     "<div>We accept: <i class='fa fa-stripe'></i> <i class='fa fa-cc-visa'></i> <i class='fa fa-cc-mastercard'></i> <i class='fa fa-cc-amex'></i> <i class='fa fa-cc-discover'></i></div><br>" +
-    "<h3> Subtotal: {{ cartSubTotal | currency }} </h3>" +
-    "<h3> Tax: {{ cartTotal - cartSubTotal | currency }} </h3>" +
-    "<h3> Total: {{ cartTotal | currency }} </h3>" +
+    "<h3> Subtotal: {{ cartSubTotal | fixed }} </h3>" +
+    "<h3> Tax: {{ cartTotal - cartSubTotal | fixed }} </h3>" +
+    "<h3> Total: {{ cartTotal | fixed }} </h3>" +
     "<br><div>This is where our payment processor goes</div>" +
     "</div>" +
     "</div>" +
@@ -99,8 +99,8 @@
         return cartSize;
       },
 
-      currency: function (val) {
-        return val + 'shekel69'
+      fixed: function (val) {
+        return val.toFixed(2)
       }
     },
 

@@ -25,7 +25,7 @@
           checkoutBool: false,
           cart: [],
           cartSubTotal: 0,
-          tax: 0.065,
+          tax: 0.17,
           cartTotal: 0
         }
       }
@@ -220,6 +220,11 @@
       text-align: center;
 
       .cart {
+        .cartSubTotal {
+          padding-right: 1em;
+          padding-bottom: 0.5em;
+        }
+
         position: fixed;
         right: 0em;
         top: 0em;
