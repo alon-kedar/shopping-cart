@@ -55,7 +55,7 @@
     '</tbody>' +
     '</table>' +
     '<button v-show="cartSubTotal" @click="checkoutModal()">Checkout</button></div>' +
-    "<div class='modalWrapper' v-show='showModal'>" +
+    "<div class='modalWrapper' v-show='data.showModal'>" +
     "<div class='overlay' @click='hideModal()'></div>" +
     "<div class='modal checkout'>" +
     "<i class='close fa fa-times' @click='hideModal()'></i>" +
@@ -70,12 +70,6 @@
     "</div>",
 
     props: ['data'],
-
-    data: function () {
-      return {
-        showModal: false
-      }
-    },
 
     filters: {
       customPluralize: function (cart) {
@@ -129,7 +123,7 @@
 
       checkoutModal: function () {
         var self = this;
-        self.showModal = true;
+        self.data.showModal = true;
 
         console.log("CHECKOUT", self.cartTotal);
 
@@ -138,7 +132,7 @@
       hideModal: function () {
         //hide modal and empty modal data
         var self = this;
-        self.showModal = false;
+        self.data.showModal = false;
       }
     },
 

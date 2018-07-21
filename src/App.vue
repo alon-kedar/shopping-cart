@@ -26,7 +26,8 @@
           cart: [],
           cartSubTotal: 0,
           tax: 0.17,
-          cartTotal: 0
+          cartTotal: 0,
+          showModal: false
         }
       }
     },

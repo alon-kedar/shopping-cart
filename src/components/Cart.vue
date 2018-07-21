@@ -20,7 +20,7 @@
     '</div>' +
     '<h4 class="cartSubTotal" v-show="showCart"> &#8362;\t{{ cartSubTotal }} : סה"כ</h4></div>' +
     '<button class="clearCart" v-show="checkoutBool" @click="clearCart()"> Clear Cart </button>' +
-    '<button class="checkoutCart" v-show="checkoutBool" @click="propagateCheckout()"> Checkout </button>' +
+    '<button class="checkoutCart" v-show="checkoutBool" @click="checkoutModal()"> Checkout </button>' +
     '</div>',
 
 
@@ -132,10 +132,13 @@
           this.data.checkoutBool = false;
         }
       },
-      //send our request up the chain, to our parent
-      //our parent catches the event, and sends the request back down
-      propagateCheckout: function () {
-        this.data.$dispatch("checkoutRequest");
+
+      checkoutModal: function () {
+        var self = this;
+        self.data.showModal = true;
+
+        console.log("CHECKOUT", self.cartTotal);
+
       }
     }
   }
